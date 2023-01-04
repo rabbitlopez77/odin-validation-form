@@ -8,7 +8,7 @@ h3{
 #main {
     border-color: black;
     border-style: solid;
-    width: 85vw;
+    width: 65vw;
     height: 90vh;
     margin: 75px auto auto auto;
     display: grid;
@@ -40,13 +40,14 @@ h3{
 }
 #main>.formContainer{
     padding: 10px;
-    display: block;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    
 }
-#main>.formContainer>.formInputs>.input{
-    grid-column: 1;
+#main>.formContainer>.formInputs{
+    display: grid;
+    grid-template: auto/ 1fr 1fr;
+    justify-items: center;
+    
+    
+
 }
 #main>.signUpContainer{
     padding-top: 100px;
